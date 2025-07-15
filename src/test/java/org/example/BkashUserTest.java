@@ -11,5 +11,13 @@ class BkashUserTest {
         user.cashIn(500, "1234");
         assertEquals(500.0, user.getBalance());
     }
+    @Test
+    public void testAssertSame(){
+        BkashUser user = new BkashUser("01320807492","1234");
+        BkashUser another = user;
+        assertSame(user, another);
+
+    }
+
 
 }
