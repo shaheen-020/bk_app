@@ -18,7 +18,7 @@ class BkashUserTest {
         BkashUser user = new BkashUser("01792345238", "1234");
         user.cashIn(10000, "1234");
         assertTimeout(Duration.ofMillis(100), () ->{
-            user.sendMoney("01792345238", 100, "1234");
+            user.sendMoney("01792345238", 1500, "1234");
         });
     }
 }
